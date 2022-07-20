@@ -1,0 +1,56 @@
+/*----------- fonts added ---------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
+
+/*----- base styles -----*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+
+}
+
+header,
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header style */
+.top-banner {
+    background-color: black;
+    width: 1321px;
+    height: 646px;
+    padding: 40px 35px 38px 35px;
+    margin-top: 21px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+}
+
+p {
+    color: white;
+    padding-bottom: 10px;
+}
+
+#banner-button {
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: crimson;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+}
+
+.banner-info img {
+    width: 700px;
+    height: 685px;
+}
