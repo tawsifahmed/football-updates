@@ -16,12 +16,13 @@ main {
 }
 
 /* header style */
+/* ------top banner section -------------------------*/
 .top-banner {
     background-color: black;
     width: 1321px;
     height: 646px;
     padding: 40px 35px 38px 35px;
-    margin-top: 21px;
+    margin-top: 45px;
     border-radius: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -35,9 +36,21 @@ h1 {
     font-size: 60px;
 }
 
+span {
+    color: coral;
+    transition: 2s ease;
+}
+
+span:hover {
+    font-size: 65px;
+    color: crimson;
+    background-color: rgba(0, 0, 0, 0.686);
+}
+
 p {
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
+
 }
 
 #banner-button {
@@ -48,9 +61,27 @@ p {
     padding-left: 25px;
     padding-right: 25px;
     border-radius: 5px;
+    transition: 0.9s ease;
+}
+
+#banner-button:hover {
+    background-color: orange;
+    color: black;
+    border-radius: 9px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+
+.descrip {
+    padding-left: 70px;
+    padding-bottom: 80px;
 }
 
 .banner-info img {
     width: 700px;
-    height: 685px;
+    height: 684px;
+    padding-right: 5px;
 }
