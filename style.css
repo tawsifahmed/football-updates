@@ -106,7 +106,7 @@ p {
 
 /* ------ top banner style ended -----------------------*/
 
-/* ---------------------match information/news section style starts ------*/
+/* --------------------- information/news section style starts ------*/
 
 .news-portion {
     display: flex;
@@ -137,6 +137,7 @@ p {
     color: black;
     border-radius: 5px;
     text-align: center;
+    border: 1px lightgray solid;
 }
 
 #highlighted-button {
@@ -187,17 +188,58 @@ p {
 }
 
 .news-portion {
-    display: flex;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
+
+/* --------------------- information/news section style ended ------*/
 
 footer {
     background-color: black;
-    text-align: center;
+    /* text-align: center; */
     padding: 1.25%;
-    width: 100%;
-    overflow-x: hidden;
+    /* position: fixed; */
+    /* width: 100%; */
+}
 
+footer h1 {
+    color: rgb(230, 230, 230);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer hr {
+    border: 0.1px solid grey;
+    margin-bottom: 35px;
+
+}
+
+
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(6, 6fr);
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-medias {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+.fa-brands {
+    color: lightgrey;
+    align-items: center;
+    padding: 50px;
 }
 
 /* responsiveness section ----------------*/
@@ -208,7 +250,8 @@ footer {
         width: 100%;
     }
 
-    .top-banner {
+    .top-banner,
+    .news-blog {
 
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
@@ -235,6 +278,25 @@ footer {
         font-size: 40px;
     }
 
+    .news-buttons {
+        margin-bottom: 30px;
+    }
+
+    .news-portion {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fa-brands {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* for tablet devices */
@@ -243,9 +305,28 @@ footer {
         width: 100%;
     }
 
-    .top-banner {
+    .top-banner,
+    .news-blog {
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
+
+    .news-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: none;
+        border: 0 none;
+        justify-items: center;
+    }
+
+    .news-portion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .news-blog {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); */
 
     .banner-info img {
         width: 313px;
