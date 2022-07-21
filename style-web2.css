@@ -192,12 +192,6 @@ p {
     margin: 5px;
 }
 
-small {
-    padding-top: 90px;
-    padding-left: 100px;
-    text-align: center;
-}
-
 .various-news:hover {
     transform: rotate(-2deg);
 }
