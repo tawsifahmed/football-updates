@@ -4,7 +4,7 @@
 /*----- base styles -----*/
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: white;
+    background-color: aliceblue;
 
 }
 
@@ -17,17 +17,22 @@ main {
 
 /* header style */
 /* ------top banner section -------------------------*/
+.container {
+    width: 1321px;
+    padding: 20px 35px 38px 35px;
+    border-radius: 30px;
+    margin-top: 35px;
+}
+
 .top-banner {
     background-color: black;
-    width: 1321px;
-    height: 646px;
-    padding: 40px 35px 38px 35px;
-    margin-top: 45px;
-    border-radius: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
+    margin: 1px solid black;
+    padding: 40px 35px 38px 35px;
+    justify-content: space-between;
     align-items: center;
+    border-radius: 30px;
 
 }
 
@@ -38,13 +43,12 @@ h1 {
 
 span {
     color: coral;
-    transition: 2s ease;
+    transition: 1s ease;
 }
 
 span:hover {
     font-size: 65px;
     color: crimson;
-    background-color: rgba(0, 0, 0, 0.686);
 }
 
 p {
@@ -62,10 +66,13 @@ p {
     padding-right: 25px;
     border-radius: 5px;
     transition: 0.9s ease;
+    margin-bottom: 37px;
 }
 
+
+
 #banner-button:hover {
-    background-color: orange;
+    background-color: tomato;
     color: black;
     border-radius: 9px;
     padding-left: 28px;
@@ -76,12 +83,104 @@ p {
 }
 
 .descrip {
-    padding-left: 70px;
-    padding-bottom: 80px;
+    padding-left: 90px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+
+}
+
+.banner-image {
+    border: 0px solid black;
+    position: static;
+
 }
 
 .banner-info img {
     width: 700px;
     height: 684px;
-    padding-right: 5px;
+    position: relative;
+    top: 79px;
+
+}
+
+
+/* ------ top banner style ended -----------------------*/
+
+/* ---------------------match information/news section style starts ------*/
+
+.news-portion {
+    display: flex;
+}
+
+.news-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.news-buttons a {
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* responsiveness section ----------------*/
+
+/* for mobile devices */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-banner {
+
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .banner-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .banner-info img {
+        width: 300px;
+        height: 275px;
+        position: relative;
+        padding-bottom: 49px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+}
+
+/* for tablet devices */
+@media only screen and (min-width: 699px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-banner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner-info img {
+        width: 313px;
+        height: 335px;
+    }
+
+
 }
