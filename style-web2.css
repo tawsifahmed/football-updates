@@ -196,6 +196,10 @@ p {
     transform: rotate(-2deg);
 }
 
+.fixture {
+    display: flex;
+}
+
 .news-portion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
